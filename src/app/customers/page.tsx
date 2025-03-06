@@ -1,9 +1,10 @@
 // app/page.tsx
-"use client"
+'use client';
+
 import { useState } from 'react';
-import RegistrationForm from '../app/components/RegistrationForm';
-import CustomerList from '../app/components/CustomerList';
-import { Customer } from '../app/types/types';
+import RegistrationForm from '../components/RegistrationForm';
+import CustomerList from '../components/CustomerList';
+import { Customer } from '../types/types';
 
 export default function Home() {
   const [customers, setCustomers] = useState<Customer[]>([]);
