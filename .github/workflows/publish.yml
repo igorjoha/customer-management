@@ -35,12 +35,12 @@ jobs:
              
       - name: Check contents of the output directory 📂
         run: |
-          ls -la ./out  # List the contents of the ./out directory to verify it was created
+          ls -la ./o  # List the contents of the ./out directory to verify it was created
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./o
 
   deploy:
     environment:
